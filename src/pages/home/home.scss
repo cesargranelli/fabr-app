@@ -1,9 +1,13 @@
 page-home {
-    .grid-basic-page {
 
-        ion-col div {
-          text-align: center;
-        }
-      
-      }
+  .grid-basic-page {
+    ion-col div {
+      text-align: center;
+    }
+
+    ion-card-header div {
+      text-align: center;
+    }
+  }
+
 }
