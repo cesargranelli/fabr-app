@@ -13,34 +13,37 @@
     <ion-card-header>
       <div>PRÓXIMOS CONFRONTOS</div>
     </ion-card-header>
+  </ion-card>
+<!--
+  <ion-card *ngFor="let confronto of confrontos | async">
     <ion-card-content>
       <ion-grid>
         <ion-row>
           <ion-col col-3>
-            <img src="assets/imgs/logos/jundiaifootball-128x128.png">
+            <img src="{{ confronto.mandante.escudo }}">
           </ion-col>
           <ion-col col-6>
-            <div>Out 14, 2018<br> 10:00 AM<br> Rodada 36</div>
+            <div>{{ confronto.data | date: 'mediumDate' }}<br> {{ confronto.hora }}<br> Rodada {{ confronto.rodada }}</div>
           </ion-col>
           <ion-col col-3>
-            <img src="assets/imgs/logos/atibaiasuperchargers-128x128.png">
+            <img src="{{ confronto.visitante.escudo }}">
           </ion-col>
         </ion-row>
       </ion-grid>
       <ion-grid>
         <ion-row>
           <ion-col col-3>
-            <div>JUNDIAÍ</div>
+            <div>{{ confronto.mandante.nome }}</div>
           </ion-col>
           <ion-col col-6>
             <div>VS</div>
           </ion-col>
           <ion-col col-3>
-            <div>ATIBAIA</div>
+            <div>{{ confronto.visitante.nome }}</div>
           </ion-col>
         </ion-row>
       </ion-grid>
     </ion-card-content>
   </ion-card>
-
+-->
 </ion-content>
