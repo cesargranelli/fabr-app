@@ -1,20 +1,21 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { Observable } from 'rxjs';
 
 import { ConfrontoProvider } from './../../providers/confronto/confronto';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-resultado',
+  templateUrl: 'resultado.html'
 })
-export class HomePage {
+export class ResultadoPage {
 
   public confrontos: Observable<any>;
 
   constructor(
     public navCtrl: NavController,
+    public navParams: NavParams,
     public srvConfronto: ConfrontoProvider
   ) { }
 

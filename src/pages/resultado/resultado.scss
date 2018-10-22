@@ -1,0 +1,18 @@
+page-resultado {
+
+  .grid-basic-page {
+    ion-col div {
+      text-align: center;
+    }
+
+    ion-card-header div {
+      text-align: center;
+    }
+  }
+
+  .botao-back,
+  .botao-forward {
+    background-color: transparent;
+  }
+
+}
